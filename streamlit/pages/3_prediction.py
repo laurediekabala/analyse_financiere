@@ -57,7 +57,7 @@ if st.button("Lancer la Prédiction", help="Cliquez pour générer les prédicti
                 mime="text/csv",
                 help="Cliquez pour télécharger le DataFrame des prédictions."
             )
-if st.button("Lancer la Prédiction", help="Cliquez pour générer les prédictions avec intervall de confiance"):
+if st.button("Lancer la Prédiction avec interval de confiance", help="Cliquez pour générer les prédictions avec intervall de confiance"):
         st.subheader(f"Prédictions pour les {n_future_steps} prochains mois")
 
         # Obtenir les prédictions avec intervalle de confiance
