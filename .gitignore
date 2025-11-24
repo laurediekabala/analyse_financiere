@@ -1,0 +1,47 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environnement virtuel
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDEs et éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Systèmes
+.DS_Store
+Thumbs.db
+
+# Logs et fichiers temporaires
+*.log
+*.tmp
+*.bak
+
+# Données et modèles volumineux
+*.h5
+*.sqlite
+
+
+# Streamlit
+.
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Autres fichiers à ignorer
+*.swp
+*.swo
