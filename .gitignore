@@ -32,7 +32,7 @@ Thumbs.db
 *.bak
 
 # Données et modèles volumineux
-*.h5
+
 *.sqlite
 
 
