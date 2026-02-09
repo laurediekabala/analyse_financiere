@@ -11,5 +11,5 @@ streamlit>=1.30.0
 statsmodels
 #pmdarima
 joblib
-#SQLAlchemy
+SQLAlchemy
 bcrypt
