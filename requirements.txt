@@ -5,11 +5,11 @@ matplotlib
 seaborn
 scikit-learn
 tensorflow==2.15.0
-prophet
+#prophet
 plotly
-streamlit
+streamlit>=1.30.0
 statsmodels
-pmdarima
+#pmdarima
 joblib
-SQLAlchemy
+#SQLAlchemy
 bcrypt
