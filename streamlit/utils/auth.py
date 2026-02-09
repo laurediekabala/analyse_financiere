@@ -4,10 +4,17 @@ import bcrypt # Pour hacher les mots de passe
 from sqlalchemy import create_engine, Column, String
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-
-DATABASE_URL = "sqlite:///./data/users.db"
-engine = create_engine(DATABASE_URL)
+from pathlib import Path
 Base = declarative_base()
+BASE_DIR = Path(__file__).resolve().parent.parent  # streamlit/
+DB_PATH = BASE_DIR / "database" / "users.db"
+
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+engine = create_engine(
+    f"sqlite:///{DB_PATH}",
+    connect_args={"check_same_thread": False}
+)
 
 class User(Base):
     __tablename__ = "users"
